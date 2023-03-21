@@ -1,4 +1,4 @@
-To run the test make you have all the gems installed
+To run the test make sure you have Ruby and all the gems installed
 
 To run all the test type "Cucumber" in your terminal
 
