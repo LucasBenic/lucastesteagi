@@ -47,6 +47,7 @@ Then('I should see a message indicating that no results were found for "Lucas Ro
   expect(page).to have_content 'Nenhum resultado'
 end
 
+#Search with multiple keywords
 When('I search for {string} in the search box') do |string|
   find('.search-field').set(string).send_keys :enter
 end
