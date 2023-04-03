@@ -5,6 +5,7 @@ require 'rspec'
 require 'rspec/expectations'
 
 
+
 Capybara.configure do |config|
     config.default_driver = :selenium_chrome
     config.app_host = 'https://blogdoagi.com.br/'
@@ -12,10 +13,6 @@ Capybara.configure do |config|
     Capybara.page.driver.browser.manage.window.maximize
 end
 
-RSpec.configure do |config|
-    config.expect_with :rspec do |expectations|
-      expectations.include_chain_clauses_in_custom_matcher_descriptions = true
-    end
 
   # salva print de falha em execucao
   After do |scenario|
@@ -25,6 +22,6 @@ RSpec.configure do |config|
       screenshot_path = File.join(Dir.pwd, 'screenshots', screenshot)
       page.save_screenshot(screenshot_path)
       embed(screenshot_path, 'image/png', 'SCREENSHOT')
-    end
+
   end
 end

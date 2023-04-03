@@ -11,7 +11,7 @@ Feature: Search
     Scenario: Search box should be visible on the homepage
     Then I should see a search box on the homepage
 
-    
+    @hide
     Scenario: Hide the search box
     When I double cick the search icon
     Then the search box should not be placed on the page

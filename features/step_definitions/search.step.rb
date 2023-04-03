@@ -15,7 +15,7 @@ end
 
 #Hide the search box
 When('I double cick the search icon') do
-    find('#search-open').click
+  find('#search-open').click
 end
 
 Then('the search box should not be placed on the page') do
