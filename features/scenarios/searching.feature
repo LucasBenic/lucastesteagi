@@ -4,14 +4,14 @@ Feature: Search
     So that I can find the information I am looking for quickly
 
     Background: 
-        Given I am on the home page
-        When I click on the serch icon
+    Given I am on the home page
+    When I click on the serch icon
         
          
     Scenario: Search box should be visible on the homepage
     Then I should see a search box on the homepage
 
-    @hide
+    
     Scenario: Hide the search box
     When I double cick the search icon
     Then the search box should not be placed on the page
